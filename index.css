@@ -89,3 +89,101 @@ form{
 /* .fa-google{
     color:red;
 } */
+
+
+/* MEDIA QUERIES */
+@media (max-width:280px){
+    .Login-wrapper{
+        width:70%;
+    }
+    .header h1{
+        font-size:2.0rem;
+    }
+    .header p{
+        font-size:1.3rem;
+    }
+    .google-registry p{
+        font-size: 1.4rem;
+    }
+    #or p{
+        font-size:1.4rem;
+    }
+    .input label{
+        font-size:1.4rem;
+    }
+    .check-input label{
+        font-size:1.4rem;
+    }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    .Login-wrapper{
+        width:70%;
+    }
+    .header h1{
+        font-size:2.0rem;
+    }
+    .header p{
+        font-size:1.3rem;
+    }
+    .google-registry p{
+        font-size: 1.4rem;
+    }
+    #or p{
+        font-size:1.4rem;
+    }
+    .input label{
+        font-size:1.4rem;
+    }
+    .check-input label{
+        font-size:1.4rem;
+    }
+}
+
+/* IPAD SIZES */
+@media only screen and (max-width: 768px) and (min-width: 481px){
+    .Login-wrapper{
+        width:50%;
+    }
+    .header h1{
+        font-size:2.5rem;
+    }
+    .header p{
+        font-size:1.3rem;
+    }
+    .google-registry p{
+        font-size: 1.8rem;
+    }
+    #or p{
+        font-size:1.8rem;
+    }
+    .input label{
+        font-size:1.8rem;
+    }
+    .check-input label{
+        font-size:1.8rem;
+    }
+}
+/* LARGER SCREENS */
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+    .Login-wrapper{
+        width:50%;
+    }
+    .header h1{
+        font-size:2.5rem;
+    }
+    .header p{
+        font-size:1.3rem;
+    }
+    .google-registry p{
+        font-size: 1.8rem;
+    }
+    #or p{
+        font-size:1.8rem;
+    }
+    .input label{
+        font-size:1.8rem;
+    }
+    .check-input label{
+        font-size:1.8rem;
+    }
+}
