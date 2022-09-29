@@ -149,6 +149,7 @@ span{
     background-color: #fff;
     padding:7% 0% 25% 10%;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 10px;
 }
 .music-feature h3{
     color:black;
