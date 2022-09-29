@@ -54,6 +54,15 @@ nav ul li a:hover{
 #brand-logo{
     width:100px;
 }
+.hamburger{
+    display:none;
+}
+.line1{
+    width:25px;
+    height:1px;
+    background-color: #57595B;
+    margin-top:5px;
+}
 
 /* HERO SECTION */
 .hero-section{
@@ -548,10 +557,34 @@ span{
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 480px) and (min-width: 320px){
+@media (max-width:280px){
+    .hamburger{
+        display:unset;
+    }
+    nav ul{
+        position:absolute;
+        top:50px;
+        flex-direction: column;
+        width:100%;
+        display:none;
+    }
+
+    #brand-logo{
+        width:90px;
+    }
+    #nav-button{
+        width:20%;
+        font-size:1.3rem;
+    }
+    main{
+        transition:0.5s ease;
+        transform:translateY(-35px)
+    }
+  
     .hero-section{
         flex-direction: column;
         padding:5% 5%;
+        margin-top:25%;
     }
     .hero-content{
         width:100%;
@@ -628,4 +661,354 @@ span{
     .copyright{
         flex-direction: column;
     }
+}
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    .hamburger{
+        display:unset;
+    }
+    nav ul{
+        position:absolute;
+        top:50px;
+        flex-direction: column;
+        width:100%;
+        display:none;
+    }
+
+    #brand-logo{
+        width:90px;
+    }
+    #nav-button{
+        width:20%;
+        font-size:1.3rem;
+    }
+    main{
+        transition:0.5s ease;
+        transform:translateY(-35px)
+    }
+  
+    .hero-section{
+        flex-direction: column;
+        padding:5% 5%;
+        margin-top:25%;
+    }
+    .hero-content{
+        width:100%;
+    }
+    .hero-content h1{
+        font-size:3.5rem;
+    }
+    .hero-content p{
+        font-size:1.8rem;
+    }
+    .features-header{
+        width:100%;
+    }
+    .features-container{
+        grid-template-columns: 1fr;
+    }
+    .events-header{
+        flex-direction: column;
+    }
+    .events-header h1{
+        font-size:3.0rem;
+    }
+    .event-images{
+        grid-template-columns: 1fr;
+    }
+    .plans{
+        align-items: center;
+        margin-left:20%;
+        flex-direction: column;
+    }
+    .free-plan{
+        width:100%;
+    }
+    .standard-plan{
+        width:100%;
+        padding-top:30%;
+    }
+    .standard-plan  button{
+        width:80%;
+    }
+    .premium-plan{
+        width:100%;
+    }
+    .premium-plan button{
+        width:80%;
+    }
+    .trending-artists{
+        padding:5% 5%;
+    }
+    .header{
+        width:100%;
+    }
+    .header h1{
+        font-size:3.0rem;
+    }
+    .artists img{
+        width:90px;
+    }
+    .join-header h1{
+        font-size:3.0rem;
+    }
+    .join-header p{
+        width:100%;
+    }
+    .join-header a{
+        padding:3% 4%;
+    }
+    .footer-h1{
+        font-size:3.0rem;
+    }
+    .download-app-btn{
+        width:80%;
+    }
+    .copyright{
+        flex-direction: column;
+    }
+}
+/* IPAD SIZES */
+@media only screen and (max-width: 768px) and (min-width: 481px){
+    .hamburger{
+        display:unset;
+    }
+    header{
+        z-index:100;
+    }
+    nav ul{
+        position:absolute;
+        top:50px;
+        flex-direction: column;
+        width:100%;
+        justify-content: space-around;
+        margin-top:5%;
+        display:none;
+    }
+
+    #brand-logo{
+        width:90px;
+    }
+    #nav-button{
+        width:20%;
+        font-size:1.3rem;
+    }
+    main{
+        transition:0.5s ease;
+        transform:translateY(-100px)
+    }
+  
+    .hero-section{
+        flex-direction: column;
+        padding:5% 5%;
+        margin-top:25%;
+    }
+    .hero-content{
+        width:100%;
+    }
+    .hero-content h1{
+        font-size:3.5rem;
+    }
+    .hero-content p{
+        font-size:1.8rem;
+    }
+    .features-header{
+        width:100%;
+    }
+    .features-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .events-header{
+        flex-direction: column;
+    }
+    .events-header h1{
+        font-size:3.0rem;
+    }
+    .event-images{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .plans{
+        /* align-items: center; */
+        margin-left:10%;
+        /* flex-direction: column; */
+    }
+    .free-plan{
+        width:30%;
+    }
+    .standard-plan{
+        width:100%;
+        /* padding-top:30%; */
+    }
+    .standard-plan-price{
+        margin-top: 108%;
+    }
+    .standard-plan button{
+        width:80%;
+        padding:4% 0%;
+    }
+    .premium-plan{
+        width:100%;
+    }
+    .premium-plan button{
+        width:80%;
+    }
+    .trending-artists{
+        padding:5% 5%;
+    }
+    .header{
+        width:100%;
+    }
+    .header h1{
+        font-size:3.0rem;
+    }
+    .artists img{
+        width:90px;
+    }
+    .join-header h1{
+        font-size:3.0rem;
+    }
+    .join-header p{
+        width:100%;
+    }
+    .join-header a{
+        padding:3% 4%;
+    }
+    .footer-h1{
+        font-size:3.0rem;
+    }
+    .download-app-btn{
+        width:50%;
+    }
+    .copyright{
+        flex-direction: column;
+    }
+}
+
+/* LARGER SCREENS */
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+   
+    header{
+        z-index:100;
+    }
+    nav ul{
+        /* position:absolute;
+        top:50px;
+        flex-direction: column; */
+        width:40%;
+        justify-content: space-around;
+        /* margin-top:5%; */
+        font-size:1.3rem;
+    }
+
+    #brand-logo{
+        width:90px;
+    }
+    #nav-button{
+        width:20%;
+        font-size:1.3rem;
+    }
+    main{
+        transition:0.5s ease;
+        transform:translateY(-100px)
+    }
+  
+    .hero-section{
+        /* flex-direction: column; */
+        padding:5% 5%;
+        margin:25% 5% 8% 5%;
+
+    }
+    .hero-content{
+        width:100%;
+    }
+    .hero-content h1{
+        font-size:3.5rem;
+    }
+    .hero-content p{
+        font-size:1.8rem;
+    }
+    .features-header{
+        width:100%;
+    }
+    .features-container{
+        grid-template-columns: 1fr 1fr;
+        gap:10px;
+        width:90%;
+        place-items: center;
+        margin-left:4%;
+    }
+    .events-header{
+        flex-direction: column;
+    }
+    .events-header h1{
+        font-size:3.0rem;
+    }
+    .event-images{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .plans{
+        /* align-items: center; */
+        margin-left:10%;
+        /* flex-direction: column; */
+    }
+    .free-plan{
+        width:30%;
+    }
+    .standard-plan{
+        width:100%;
+        /* padding-top:30%; */
+    }
+    .standard-plan-price{
+        margin-top: 108%;
+    }
+    .standard-plan button{
+        width:80%;
+        padding:4% 0%;
+    }
+    .premium-plan{
+        width:100%;
+    }
+    .premium-plan button{
+        width:80%;
+    }
+    .trending-artists{
+        padding:5% 5%;
+    }
+    .header{
+        width:100%;
+    }
+    .header h1{
+        font-size:3.0rem;
+    }
+    .artists img{
+        width:90px;
+    }
+    .join-header h1{
+        font-size:3.0rem;
+    }
+    .join-header p{
+        width:100%;
+    }
+    .join-header a{
+        padding:3% 4%;
+    }
+    .footer-h1{
+        font-size:3.0rem;
+    }
+    .download-app-btn{
+        width:50%;
+    }
+    .copyright{
+        /* flex-direction: column; */
+        padding:2% 2%;
+    }
+}
+
+.main-active{
+    transform:translateY(120px);
+    transition:0.5s linear;
+}
+.nav-active{
+    display:block;
 }
